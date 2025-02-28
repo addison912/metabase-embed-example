@@ -1,0 +1,28 @@
+@import "tailwindcss/utilities" layer(utilities);
+/* @import "material-symbols" layer(utilities); */
+
+@utility section-min-height {
+  min-height: calc(100vh - var(--header-height));
+}
+
+@utility toggle-btn {
+  @apply [&>div]:rotate-[720deg] [&>div]:bg-transparent [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45;
+}
+
+@utility text-shadow-xl {
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.82);
+}
+
+@utility material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 20;
+}
+
+@utility center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

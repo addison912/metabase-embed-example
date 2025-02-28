@@ -1,0 +1,43 @@
+@utility aside-item {
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  @apply p-2;
+  @apply rounded-lg;
+  @apply transition-colors;
+  @apply duration-300;
+}
+
+@utility aside-item-primary {
+  @apply bg-gray-700;
+  @apply hover:bg-gray-800;
+  @apply text-white;
+  @apply hover:text-gray-100;
+}
+
+@utility btn {
+  @apply rounded-lg;
+  @apply transition-colors;
+  @apply duration-300;
+}
+
+@utility btn-primary {
+  @apply bg-cyan-700;
+  @apply hover:bg-cyan-800;
+  @apply text-white;
+  @apply hover:text-gray-100;
+}
+
+@utility btn-orange {
+  @apply bg-orange-800;
+  @apply hover:bg-orange-900;
+  @apply text-white;
+  @apply hover:text-gray-100;
+}
+
+@utility btn-blue {
+  @apply bg-sky-700;
+  @apply hover:bg-sky-800;
+  @apply text-white;
+  @apply hover:text-gray-100;
+}
