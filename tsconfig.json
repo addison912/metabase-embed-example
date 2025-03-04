@@ -8,6 +8,8 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
+    "noErrorTruncation": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Strictness */
     "strict": true,
@@ -15,7 +17,7 @@
     "checkJs": true,
 
     /* Bundled projects */
-    "lib": ["dom", "dom.iterable", "ES2022"],
+    "lib": ["dom", "dom.iterable", "ESNext"],
     "noEmit": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -27,11 +29,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["./src/app/components/*"]
+      "@components/*": ["./src/app/components/*"],
+      "@routers/*": ["./src/server/api/routers/*"],
+      "@styles/*": ["./src/app/styles/*"]
     }
   },
   "include": [
-    ".eslintrc.cjs",
+    ".eslintrc.json",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
@@ -39,5 +43,5 @@
     "**/*.js",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["./scratch"]
 }
