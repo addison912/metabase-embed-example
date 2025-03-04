@@ -4,14 +4,10 @@ import NavItem from "./LeftNavItem";
 import { useState } from "react";
 import { getLinks } from "./links";
 
-type LeftNavProps = {
-  userType: string;
-};
-
-const LeftNav = ({ userType }: LeftNavProps) => {
+const LeftNav = () => {
   const [open, setOpen] = useState(true);
 
-  const { upperMenuItems, lowerMenuItems } = getLinks(userType);
+  const { upperMenuItems, lowerMenuItems } = getLinks();
 
   return (
     <aside
